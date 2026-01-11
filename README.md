@@ -82,7 +82,7 @@ This component predicts potential rice pest outbreaks based on field conditions 
 
 Predicts pest outbreak probability instead of image-based detection.
 
-Focuses on major rice pests such as Brown Planthopper (BPH).
+Focuses on major rice pests such as Brown Planthopper (BPH), Rice Stem Borer, Stem leaf folder.
 
 Crop stage–aware pest risk analysis.
 
