@@ -1,10 +1,23 @@
-# 🌾 Smart Rice Farming System
+#  Smart Rice Farming System
 
-An AI-powered, farmer-centric decision support platform designed to improve rice cultivation in Sri Lanka through **disease detection**, **yield prediction**, **market price forecasting**, and **pest outbreak prevention**. The system bridges advanced machine learning with real-world agricultural practices, optimized for rural and low-connectivity environments.
+Rice cultivation is a critical agricultural activity for small-scale farmers in Sri Lanka, yet crop productivity is frequently threatened by diseases such as Brown Spot, False Smut, and Tungro. Early identification of these diseases is challenging, particularly for new farmers who lack experience in visual diagnosis and have limited access to agricultural experts. Traditional disease identification methods are largely manual, time-consuming, and reactive, often resulting in late intervention, increased chemical usage, and significant yield loss.
+
+
+The Smart Rice Disease Detection, Management & Early Warning System is designed to address these challenges by enabling real-time, image-based disease diagnosis using a mobile device. Farmers can capture or upload rice leaf images through a user-friendly mobile application. The system preprocesses the image and applies a trained deep learning model to identify the disease condition accurately. The solution operates entirely offline, making it suitable for rural farming regions with limited or no internet connectivity.
+
+
+To enhance transparency and trust, the system incorporates Explainable AI techniques that visually highlight the affected regions of the leaf using heatmaps. This allows farmers to clearly understand where the disease is present rather than relying solely on textual predictions. In addition to disease identification, the system evaluates disease severity levels and provides early warnings before infections spread across the field.
+
+
+Based on the detected disease and severity level, the system delivers simple, farmer-friendly management and treatment guidance. These recommendations help farmers take timely preventive or corrective actions, reduce unnecessary chemical application, and improve overall crop health. By combining disease detection, explainability, and actionable guidance into a single platform, this component transforms technical image analysis into practical agricultural decision support.
+
+
+Overall, this system supports sustainable rice cultivation by reducing crop losses, empowering new farmers with accessible knowledge, and enabling proactive disease management. It plays a key role in bridging the gap between advanced technological solutions and real-world agricultural practices.
+
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 1. Overview
 2. System Modules
@@ -20,7 +33,7 @@ An AI-powered, farmer-centric decision support platform designed to improve rice
 
 ---
 
-## 🌱 1. Overview
+##  1. Overview
 
 Rice cultivation is a critical livelihood for small-scale farmers in Sri Lanka. However, productivity is often threatened by diseases, pests, unpredictable weather, and volatile market prices. Traditional methods are manual, reactive, and dependent on expert availability.
 
@@ -37,17 +50,17 @@ The **Smart Rice Farming System** addresses these challenges by providing:
 
 
 
-## 🧩 2. System Modules
+##  2. System Modules
 
 ---
 
-## 🦠 2.1 Smart Rice Disease Detection, Management & Early Warning System
+##  2.1 Smart Rice Disease Detection, Management & Early Warning System
 
-### 📖 Description
+###  Description
 
 An offline, image-based rice disease diagnosis system that allows farmers to detect diseases early using a mobile phone camera. The system identifies common rice diseases and provides explainable results with actionable treatment guidance.
 
-### 🎯 Key Features
+###  Key Features
 
 * Image-based disease detection
 * Offline on-device inference
@@ -56,14 +69,14 @@ An offline, image-based rice disease diagnosis system that allows farmers to det
 * Early warning alerts
 * Farmer-friendly management recommendations
 
-### 🦠 Supported Disease Classes
+###  Supported Disease Classes
 
 * Brown Spot
 * False Smut
 * Tungro
 * Healthy
 
-### 🛠 Technology Stack
+###  Technology Stack
 
 **Programming Languages**
 
@@ -104,20 +117,20 @@ An offline, image-based rice disease diagnosis system that allows farmers to det
 
 ---
 
-## 🌾 2.2 Smart Rice Yield Prediction System
+##  2.2 Smart Rice Yield Prediction System
 
-### 📖 Description
+###  Description
 
 A data-driven yield prediction module that helps farmers and agricultural officers estimate rice yield based on environmental, seasonal, and regional factors.
 
-### 🎯 Key Features
+###  Key Features
 
 * Region-aware yield prediction
 * Seasonal trend analysis
 * Environmental feature integration
 * Interpretable baseline and ensemble models
 
-### 📊 Model Output
+###  Model Output
 
 * Predicted yield (tons/hectare)
 * Seasonal trends
@@ -131,7 +144,7 @@ Season: Yala
 Predicted Yield: 4.8 tons/hectare
 ```
 
-### 🛠 Technology Stack
+###  Technology Stack
 
 **Programming Languages**
 
@@ -164,26 +177,26 @@ Predicted Yield: 4.8 tons/hectare
 
 ---
 
-## 💰 2.3 Market Price Forecasting & Decision Support System
+##  2.3 Market Price Forecasting & Decision Support System
 
-### 📖 Description
+###  Description
 
 A time-series forecasting and recommendation system that predicts paddy market prices and converts predictions into actionable selling decisions.
 
-### 🎯 Key Features
+###  Key Features
 
 * Hybrid price forecasting (ARIMA + LSTM)
 * Confidence-based recommendations
 * Explainable trend insights
 * SMS support for feature phone users
 
-### 📈 Recommendation Outputs
+###  Recommendation Outputs
 
 * Sell Now
 * Hold (X days/weeks)
 * Confidence score with explanation
 
-### 🛠 Technology Stack
+###  Technology Stack
 
 **Programming Languages**
 
@@ -210,13 +223,13 @@ A time-series forecasting and recommendation system that predicts paddy market p
 
 ---
 
-## 🐛 2.4 Smart Pest Prediction & Prevention System
+##  2.4 Smart Pest Prediction & Prevention System
 
-### 📖 Description
+###  Description
 
 A preventive AI-based pest management system that predicts pest outbreak risks using field conditions, weather data, and farming practices—before damage occurs.
 
-### 🎯 Key Features
+###  Key Features
 
 * Pest outbreak probability prediction
 * Risk-level classification (Low / Medium / High)
@@ -224,13 +237,13 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 * Explainable risk insights
 * Push notifications & alerts
 
-### 🚦 Risk Levels
+###  Risk Levels
 
 * **Low (0–30%)** – Routine monitoring
 * **Medium (31–60%)** – Preventive measures
 * **High (61–100%)** – Immediate intervention
 
-### 🛠 Technology Stack
+###  Technology Stack
 
 **Machine Learning Models**
 
@@ -262,7 +275,7 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 
 ---
 
-## 🧰 3. Technology Stack Summary
+##  3. Technology Stack Summary
 
 | Layer         | Technologies                        |
 | ------------- | ----------------------------------- |
@@ -275,7 +288,7 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 
 ---
 
-## 🚀 4. Deployment Environment
+##  4. Deployment Environment
 
 * Android devices (offline-first support)
 * Server-based inference for yield, pest & price models
@@ -284,7 +297,7 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 
 ---
 
-## 🔁 5. Version Control & Collaboration
+##  5. Version Control & Collaboration
 
 * Git & GitHub
 * Branch-based development
@@ -292,7 +305,7 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 
 ---
 
-## 🌍 6. Novelty & Impact
+##  6. Novelty & Impact
 
 * Tailored specifically for Sri Lankan rice farming
 * Offline AI for rural accessibility
@@ -302,7 +315,7 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 
 ---
 
-## 🤝 Contribution & Future Enhancements
+##  Contribution & Future Enhancements
 
 * Multilingual support (Sinhala / Tamil / English)
 * Voice-based interaction
@@ -311,4 +324,4 @@ A preventive AI-based pest management system that predicts pest outbreak risks u
 
 ---
 
-**Empowering farmers with AI-driven, practical, and sustainable agricultural intelligence. 🌱**
+**Empowering farmers with AI-driven, practical, and sustainable agricultural intelligence. **
