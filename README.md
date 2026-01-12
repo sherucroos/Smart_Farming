@@ -1,248 +1,314 @@
-Smart Farming Assistant for Rice Farmers in Sri Lanka
+# 🌾 Smart Rice Farming System
 
-📱 AI-Powered Agricultural Decision Support System
+An AI-powered, farmer-centric decision support platform designed to improve rice cultivation in Sri Lanka through **disease detection**, **yield prediction**, **market price forecasting**, and **pest outbreak prevention**. The system bridges advanced machine learning with real-world agricultural practices, optimized for rural and low-connectivity environments.
 
-📌 Project Overview
+---
 
-The Smart Farming Assistant is an AI-powered, mobile-based agricultural decision support system designed to help small-scale rice farmers in Sri Lanka make informed, data-driven decisions.
+## 📌 Table of Contents
 
-The system integrates machine learning, deep learning, and time-series forecasting to address key challenges in rice cultivation, including disease detection, pest outbreak prevention, yield estimation, and market price forecasting.
+1. Overview
+2. System Modules
 
-The platform supports both smartphone users (mobile/web application) and feature phone users (SMS alerts), ensuring accessibility in rural and low-connectivity environments.
+   * Rice Disease Detection, Management & Early Warning
+   * Rice Yield Prediction
+   * Market Price Forecasting & Decision Support
+   * Pest Prediction & Prevention
+3. Technology Stack
+4. Deployment Environment
+5. Version Control
+6. Novelty & Impact
 
-🧩 System Components
-🌱 Component 1: Rice Disease Detection, Management & Early Warning System
-🐛 Component 2: Smart Pest Prediction and Prevention System
-🌾 Component 3: Rice Yield Prediction System
-📈 Component 4: Market Price Forecasting & Decision Support System
+---
 
-![WhatsApp Image 2026-01-11 at 10 01 04 PM](https://github.com/user-attachments/assets/239b1f38-2324-492e-b92d-4075b18aa6c9)
+## 🌱 1. Overview
 
+Rice cultivation is a critical livelihood for small-scale farmers in Sri Lanka. However, productivity is often threatened by diseases, pests, unpredictable weather, and volatile market prices. Traditional methods are manual, reactive, and dependent on expert availability.
 
+The **Smart Rice Farming System** addresses these challenges by providing:
 
+* Offline-capable AI solutions
+* Explainable predictions
+* Farmer-friendly recommendations
+* Early warnings for proactive decision-making
 
+---
+![WhatsApp Image 2026-01-11 at 10 01 04 PM](https://github.com/user-attachments/assets/946ccc12-64c8-49bd-bace-02ab73a6308f)
 
 
 
-🌱 Component 1: Rice Disease Detection, Management & Early Warning System
 
-Rice cultivation is a critical agricultural activity for small-scale farmers in Sri Lanka. However, crop productivity is frequently threatened by diseases such as Brown Spot, False Smut, and Tungro. Traditional disease identification methods are largely manual, time-consuming, and reactive, often resulting in delayed intervention, excessive chemical usage, and yield loss.
+## 🧩 2. System Modules
 
-This component enables real-time, image-based disease diagnosis using a mobile device. Farmers can capture or upload rice leaf images through a user-friendly mobile application. The system preprocesses images and applies a trained deep learning model to accurately identify disease conditions. The solution supports offline inference, making it suitable for rural regions with limited internet connectivity.
+---
 
-To enhance transparency and trust, the system integrates Explainable AI (Grad-CAM) techniques to visually highlight infected leaf regions. It also assesses disease severity levels and generates early warnings to prevent disease spread. Based on predictions, farmers receive simple management and treatment recommendations, reducing unnecessary chemical usage and improving crop health.
+## 🦠 2.1 Smart Rice Disease Detection, Management & Early Warning System
 
-🔍 Key Features
+### 📖 Description
 
-Image-based rice disease detection
+An offline, image-based rice disease diagnosis system that allows farmers to detect diseases early using a mobile phone camera. The system identifies common rice diseases and provides explainable results with actionable treatment guidance.
 
-Offline on-device inference
+### 🎯 Key Features
 
-Explainable AI heatmaps (Grad-CAM)
+* Image-based disease detection
+* Offline on-device inference
+* Explainable AI with heatmaps (Grad-CAM)
+* Disease severity estimation
+* Early warning alerts
+* Farmer-friendly management recommendations
 
-Disease severity estimation
+### 🦠 Supported Disease Classes
 
-Farmer-friendly treatment guidance
+* Brown Spot
+* False Smut
+* Tungro
+* Healthy
 
-⚙️ Module-Specific Dependencies
-Programming Languages
+### 🛠 Technology Stack
 
-Python – Backend development, image preprocessing, model training, inference
+**Programming Languages**
 
-JavaScript / TypeScript – Cross-platform mobile application development
+* Python
+* JavaScript / TypeScript
 
-Frameworks & Tools
+**Frameworks & Tools**
 
-TensorFlow / Keras – Deep learning model implementation
+* TensorFlow / Keras
+* Flask / FastAPI
+* React Native
+* Expo Go
+* Visual Studio Code
 
-Flask / FastAPI – RESTful API exposure
+**Python Libraries**
 
-React Native – Cross-platform mobile app
+* NumPy
+* Pandas
+* OpenCV (cv2)
+* Matplotlib / Seaborn
+* Scikit-learn
+* Joblib / TensorFlow SavedModel
 
-Expo Go – App testing and debugging
+**Machine Learning Model**
 
-Visual Studio Code – Development environment
+* DenseNet121 (Pre-trained, Frozen)
+* Custom Fully Connected Classifier
 
-Python Libraries
+**Explainable AI**
 
-NumPy, Pandas, OpenCV
+* Grad-CAM heatmaps
 
-Matplotlib / Seaborn
+**Deployment**
 
-Scikit-learn
+* Android devices (Android 8+)
+* Offline on-device inference
+* Optimized for low-end smartphones
 
-Joblib / TensorFlow SavedModel
+---
 
-Machine Learning Models
+## 🌾 2.2 Smart Rice Yield Prediction System
 
-DenseNet121 (Pre-trained, Frozen)
+### 📖 Description
 
-Custom classifier layers
+A data-driven yield prediction module that helps farmers and agricultural officers estimate rice yield based on environmental, seasonal, and regional factors.
 
-Supported Classes
+### 🎯 Key Features
 
-Brown Spot
+* Region-aware yield prediction
+* Seasonal trend analysis
+* Environmental feature integration
+* Interpretable baseline and ensemble models
 
-False Smut
+### 📊 Model Output
 
-Tungro
+* Predicted yield (tons/hectare)
+* Seasonal trends
+* Regional comparisons
 
-Healthy
+**Example:**
 
-Explainable AI
-
-Grad-CAM – Visual heatmaps for transparency
-
-Deployment
-
-Android devices (Android 8+)
-
-Offline on-device inference
-
-Optimized for low-end smartphones
-
-🐛 Component 2: Smart Pest Prediction and Prevention System
-
-This AI-powered component predicts potential pest outbreaks based on field conditions, crop stage, and farming practices, enabling preventive action before damage occurs. Unlike image-based pest detection, this system focuses on outbreak probability prediction and Integrated Pest Management (IPM).
-
-🔍 Key Features
-
-Crop stage–aware pest risk prediction
-
-Preventive pest management
-
-Integrated Pest Management (IPM) recommendations
-
-Explainable risk insights
-
-⚙️ Technologies
-
-ML Models: Random Forest, Logistic Regression
-
-Framework: Scikit-learn
-
-Backend: Flask / FastAPI
-
-Data Sources: Pest history, weather, field data
-
-📦 Output
-
-Pest type
-
-Outbreak probability
-
-Risk level (Low / Medium / High)
-
-Stage-specific IPM recommendations
-
-🌾 Component 3: Rice Yield Prediction System
-
-This component predicts expected rice yield using historical yield records, soil characteristics, and weather data. It helps farmers and agricultural officers plan cultivation, storage, and supply management.
-
-🔍 Key Features
-
-Region- and season-based yield prediction
-
-Supports Sri Lanka’s micro-climate zones
-
-Seasonal trend analysis and comparison
-
-⚙️ Technologies
-
-ML Models: Random Forest Regressor, Linear Regression
-
-Framework: Scikit-learn
-
-Backend: Flask / FastAPI
-
-Data Sources: Yield, soil, weather data
-
-📦 Model Output
-
-Estimated yield (tons/hectare)
-
-Seasonal trends
-
-Regional comparison
-
-Example:
+```
 Region: Anuradhapura
 Season: Yala
 Predicted Yield: 4.8 tons/hectare
+```
 
-📈 Component 4: Market Price Forecasting & Decision Support System
+### 🛠 Technology Stack
 
-This component forecasts future rice market prices using historical market data and delivers actionable selling recommendations to farmers via SMS and mobile/web dashboards.
+**Programming Languages**
 
-🔍 Key Features
+* Python
+* JavaScript / TypeScript
 
-Short- and long-term price forecasting
+**Frameworks & Tools**
 
-Sell-now or hold recommendations
+* Scikit-learn
+* Flask / FastAPI
+* React / React Native
+* Visual Studio Code
 
-Confidence-based decision support
+**Machine Learning Models**
 
-SMS alerts for feature phone users
+* Random Forest Regressor
+* Linear Regression
 
-⚙️ Technologies
+**Feature Engineering**
 
-Models: ARIMA, LSTM
+* Soil & weather data integration
+* Seasonal encoding (Yala / Maha)
+* Region-based feature mapping
 
-Frameworks: TensorFlow, Statsmodels
+**Evaluation Metrics**
 
-Backend: Flask / FastAPI
+* RMSE
+* MAE
+* R² Score
 
-Frontend: React / Next.js / React Native
+---
 
-SMS Gateway: API-based service
+## 💰 2.3 Market Price Forecasting & Decision Support System
 
-📦 Output
+### 📖 Description
 
-Forecasted prices
+A time-series forecasting and recommendation system that predicts paddy market prices and converts predictions into actionable selling decisions.
 
-Price trend graphs
+### 🎯 Key Features
 
-SMS recommendations
+* Hybrid price forecasting (ARIMA + LSTM)
+* Confidence-based recommendations
+* Explainable trend insights
+* SMS support for feature phone users
 
-Example:
-Current Price: Rs. 115/kg
-Forecasted Price (2 weeks): Rs. 128/kg
-Recommendation: Wait before selling
+### 📈 Recommendation Outputs
 
-🗄️ Data Storage
+* Sell Now
+* Hold (X days/weeks)
+* Confidence score with explanation
 
-Local databases (SQLite / PostgreSQL)
+### 🛠 Technology Stack
 
-Optional cloud storage for analytics and model retraining
+**Programming Languages**
 
-🚀 Deployment Environment
+* Python
+* JavaScript / TypeScript
 
-Server-based inference
+**Frameworks & Tools**
 
-Optimized for low-bandwidth rural environments
+* TensorFlow / Keras
+* Statsmodels (ARIMA)
+* Flask / FastAPI
+* React / Next.js / React Native
 
-Offline support (selected components)
+**Machine Learning Models**
 
-🔄 Version Control
+* ARIMA (short-term trends)
+* LSTM (long-term & nonlinear trends)
+* Hybrid forecasting strategy
 
-Git & GitHub – Source code management and collaboration
+**User Communication**
 
-👥 Team Members
-Name	Component
-Aleem MJA	Rice Disease Detection
-Nawarathna M A S W	Pest Outbreak Prediction
-Farjees MTMT	Rice Yield Prediction
-Croos IS	Market Price Forecasting & SMS Alerts
-🌟 Future Enhancements
+* Web & mobile dashboards
+* SMS gateway integration
 
-Voice-based interaction
+---
 
-IoT sensor integration
+## 🐛 2.4 Smart Pest Prediction & Prevention System
 
-Expansion to other crops
+### 📖 Description
 
-Centralized agricultural analytics
+A preventive AI-based pest management system that predicts pest outbreak risks using field conditions, weather data, and farming practices—before damage occurs.
 
-📄 License
+### 🎯 Key Features
 
-Developed for academic and research purposes only.
+* Pest outbreak probability prediction
+* Risk-level classification (Low / Medium / High)
+* Integrated Pest Management (IPM) recommendations
+* Explainable risk insights
+* Push notifications & alerts
+
+### 🚦 Risk Levels
+
+* **Low (0–30%)** – Routine monitoring
+* **Medium (31–60%)** – Preventive measures
+* **High (61–100%)** – Immediate intervention
+
+### 🛠 Technology Stack
+
+**Machine Learning Models**
+
+* Random Forest Classifier
+* Logistic Regression
+* Weighted Ensemble Strategy
+
+**Python Libraries**
+
+* NumPy
+* Pandas
+* Scikit-learn
+* Matplotlib / Seaborn
+* Imbalanced-learn (SMOTE)
+* Joblib
+
+**External Integrations**
+
+* Weather APIs
+* Rice Research & Development Institute data
+* GIS-based regional pest pressure mapping
+
+**Recommendations**
+
+* Cultural controls
+* Biological controls
+* Mechanical controls
+* Chemical controls (last resort)
+
+---
+
+## 🧰 3. Technology Stack Summary
+
+| Layer         | Technologies                        |
+| ------------- | ----------------------------------- |
+| Frontend      | React, React Native, Expo           |
+| Backend       | Flask, FastAPI                      |
+| ML / DL       | TensorFlow, Keras, Scikit-learn     |
+| Visualization | Matplotlib, Seaborn                 |
+| Storage       | SQLite, PostgreSQL (Optional Cloud) |
+| Deployment    | Android, Server-based APIs          |
+
+---
+
+## 🚀 4. Deployment Environment
+
+* Android devices (offline-first support)
+* Server-based inference for yield, pest & price models
+* Optimized for low-bandwidth rural environments
+* Docker-based production deployment (future-ready)
+
+---
+
+## 🔁 5. Version Control & Collaboration
+
+* Git & GitHub
+* Branch-based development
+* Pull requests & issue tracking
+
+---
+
+## 🌍 6. Novelty & Impact
+
+* Tailored specifically for Sri Lankan rice farming
+* Offline AI for rural accessibility
+* Explainable predictions to build farmer trust
+* Integrates disease, pest, yield, and market intelligence
+* Promotes sustainable agriculture and reduced chemical usage
+
+---
+
+## 🤝 Contribution & Future Enhancements
+
+* Multilingual support (Sinhala / Tamil / English)
+* Voice-based interaction
+* Cloud-based analytics & model retraining
+* Community-level early warning systems
+
+---
+
+**Empowering farmers with AI-driven, practical, and sustainable agricultural intelligence. 🌱**
